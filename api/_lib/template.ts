@@ -74,7 +74,7 @@ function getTemplate(lastDay: LastDayStats): string {
             </div>
             <div class="stats colorDanger borderColorDanger">
               <p class="number">
-                ${lastDay.possibleDeaths.toString()}
+                ${(lastDay.deaths + lastDay.possibleDeaths).toString()}
               </p>
               <h3 class="text">
                 'Posible' Fallecidos
