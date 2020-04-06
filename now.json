@@ -1,0 +1,14 @@
+{
+  "public": true,
+  "version": 2,
+  "functions": {
+    "api/**": {
+      "memory": 1024
+    }
+  },
+  "env": {
+    "API_AIRTABLE_PATH": "@api-airtable-path",
+    "AIRTABLE_KEY": "@airtable-key"
+  },
+  "rewrites": [{ "source": "/(.+)", "destination": "/api" }]
+}
